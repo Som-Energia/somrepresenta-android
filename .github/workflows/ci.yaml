@@ -28,7 +28,7 @@ jobs:
         run: ./gradlew lint
 
       - name: Run Unit Tests
-        run: ./gradlew testStagingDebugUnitTest
+        run: ./gradlew testReleaseUniTest
 
       - name: Export APK
         uses: actions/upload-artifact@v2
