@@ -65,4 +65,12 @@ class MainActivity : AppCompatActivity() {
         }}
         toastMe("Guardado en $targetDir/$filename")
     }
+
+    override fun onBackPressed() {
+        if (webView.canGoBack()) {
+            webView.goBack()
+        } else {
+            super.onBackPressed()
+        }
+    }
 }
